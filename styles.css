@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+/* Навигационное меню */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #000000;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: 25px;
+}
+
+nav ul li {
+    text-align: center;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: color 0.3s;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #8a4343;
+}
+
+/* Фиксированная кнопка для связи */
+.button-container {
+    position: fixed;
+    bottom: 35px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.contact {
+    background-color: #0059ff;
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 25px;
+    padding: 15px 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.contact:hover {
+    background-color: #8a4343;
+    transform: scale(1.05);
+}
+
+/* Основные секции сайта */
+.section {
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+}
+
+/* Фоновые стили для секций */
+.main-section {
+    height: 650px;
+    background-color: white;
+}
+
+.about-section {
+    height: 150vh;
+    background-color: #000000; /* Черный фон */
+    color: #ffffff;
+}
+
+.services-section {
+    height: 150vh;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+.footer {
+    height: 100px;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.footer h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 1.2em;
+    opacity: 0.8;
+}
